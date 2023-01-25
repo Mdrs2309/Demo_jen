@@ -9,7 +9,7 @@ pipeline
         }
         stage('Semgrep'){
                 steps{
-                        sh "semgrep scan C:\Users\Hp\Desktop\Sast\DSVPWA-main\DSVPWA-main"
+                        sh "semgrep --config=auto C:\Users\Hp\Desktop\Sast\DSVPWA-main\DSVPWA-main"
                 }
         }               
     }
