@@ -9,7 +9,7 @@ pipeline
             }
         stage('Bandit') {
             steps {
-                sh "bandit -r DSVPWA-main -f html -o dsvpwa3.html"
+                sh "bandit -r \ProgramData\Jenkins\.jenkins\DSVPWA-main -f html -o \Users\Hp\Desktop\Sastdsvpwa3.html"
             }
         }
         stage('Semgrep'){
